@@ -1,7 +1,7 @@
 import fs from 'fs';
 import url from 'url';
 import path from 'path';
-import RSp from '@rop7/rsp-libcore.js';
+import RSp from '@ropsoft/rsp-libcore.js';
 
 const logger = new RSp.Logger({ debug: true });
 

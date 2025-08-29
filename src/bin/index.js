@@ -1,6 +1,6 @@
 #!/usr/bin/env -S node --no-warnings
 
-import RSp from '@rop7/rsp-libcore.js'
+import RSp from '@ropsoft/rsp-libcore.js'
 import Api from '../api/index.js'
 
 const logger = new RSp.Logger();
@@ -15,6 +15,12 @@ const main = () => {
             execute: () => { Api.up() }
         },
 
+        go: {
+            example: 'rsp-codeproj go',
+            description: 'Likewise "up" but with tag versioning',
+            execute: () => { Api.go() }
+        },
+
         init: {
             example: 'rsp-codeproj init',
             description: 'Initialize git repo',
@@ -25,6 +31,12 @@ const main = () => {
             example: 'rsp-codeproj push',
             description: 'Push changes to remote git repository',
             execute: () => { Api.push() }
+        },
+
+        check: {
+            example: 'rsp-codeproj check',
+            description: 'Check if the repository is up to date',
+            execute: () => { Api.checkIsUpToDate() }
         },
 
         stage: {

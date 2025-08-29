@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@rop7/rsp-libcore.js':
-        specifier: ^1.3.5
-        version: 1.3.5
+      '@ropsoft/rsp-libcore.js':
+        specifier: github:rop7/rsp-libcore.js#latest
+        version: '@ropsoft/rsp-libcorejs@git+https://git@github.com:rop7/rsp-libcore.js.git#28cdcddb24af7d26548e87ccd0529a742c64aa67'
       shelljs:
         specifier: ^0.9.2
         version: 0.9.2
@@ -36,8 +36,9 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@rop7/rsp-libcore.js@1.3.5':
-    resolution: {integrity: sha512-ZqWW3dD+CA79ml2TwO0Mnb3ylwXyMFWbdV1ekJ4DS43ja3U/qY1SvPJb2xrz94kA9ek650enr0BMFMbOc5YoLg==, tarball: https://npm.pkg.github.com/download/@rop7/rsp-libcore.js/1.3.5/1e42d2ac2deaddb14be2118bce0c6d4b7297cf55}
+  '@ropsoft/rsp-libcorejs@git+https://git@github.com:rop7/rsp-libcore.js.git#28cdcddb24af7d26548e87ccd0529a742c64aa67':
+    resolution: {commit: 28cdcddb24af7d26548e87ccd0529a742c64aa67, repo: git@github.com:rop7/rsp-libcore.js.git, type: git}
+    version: 1.7.0
 
   async@2.6.4:
     resolution: {integrity: sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==}
@@ -49,8 +50,8 @@ packages:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
 
-  chalk@5.4.1:
-    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
+  chalk@5.5.0:
+    resolution: {integrity: sha512-1tm8DTaJhPBG3bIkVeZt1iZM9GfSX2lzOeDVZH9R9ffRHpmHvxZ/QhgQH/aDTkswQVt+YHdXAdS/In/30OjCbg==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   colors@1.0.3:
@@ -287,9 +288,9 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@rop7/rsp-libcore.js@1.3.5':
+  '@ropsoft/rsp-libcorejs@git+https://git@github.com:rop7/rsp-libcore.js.git#28cdcddb24af7d26548e87ccd0529a742c64aa67':
     dependencies:
-      chalk: 5.4.1
+      chalk: 5.5.0
       command: 0.0.5
       node-tmux: 1.0.2
       numeral: 2.0.6
@@ -306,7 +307,7 @@ snapshots:
     dependencies:
       fill-range: 7.1.1
 
-  chalk@5.4.1: {}
+  chalk@5.5.0: {}
 
   colors@1.0.3: {}
 
